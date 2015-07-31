@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns:background="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="title" content="LayoutIt! - Bootstrap可视化布局系统">
+    <meta name="description" content="LayoutIt! 可拖放排序在线编辑的Bootstrap可视化布局系统">
+    <meta name="keywords" content="可视化,布局,系统">
+    <title>个人中心</title>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/jquery.htmlClean.js"></script>
+    <script type="text/javascript" src="js/ckeditor.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- Le styles -->
+    <link href="css/bootstrap-combined.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="css/layoutit.css" rel="stylesheet">-->
+</head>
+
+<body style="min-height: 660px; cursor: auto;" class="edit" background="img/bg10.jpg">
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse"><span
+                                class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                        <a class="brand" href="#">个人中心</a>
+
+                        <div class="nav-collapse collapse navbar-responsive-collapse">
+
+                            <ul class="nav pull-right">
+                                <li>
+                                    <a href="#">返回主页</a>
+                                </li>
+                                <li>
+                                    <a href="#">退出登录</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="logo">
+                    <a href="#"><img src="img/photo1.png" alt="user photo"/>
+    
+                        <p class="text-center">更换头像</p>
+                    </a>
+                </div>
+                <hr style="color: darkblue">
+                <table class="table table-hover table-striped">
+                    <tbody>
+                        <tr class="info">
+                            <td>账户名：</td>
+                            <td>kobebryant505935728@gmail.com</td>
+                        </tr>
+                        <tr class="info">
+                            <td>积分：</td>
+                            <td>99999</td>
+                        </tr>
+                        <tr class="info">
+                            <td>账户状态：</td>
+                            <td>正常</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-block btn-info" type="button">修改信息</button>
+            </div>
+        </div>
+    </div>
+        <div class="span5">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active text-center"
+                        style="width: 100%;"><a href="#">阅历状态</a></li>
+            </ul>
+            <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                    <th>
+                        编号
+                    </th>
+                    <th>
+                        产品
+                    </th>
+                    <th>
+                        交付时间
+                    </th>
+                    <th>
+                        状态
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="info">
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        TB - Monthly
+                    </td>
+                    <td>
+                        01/04/2012
+                    </td>
+                    <td>
+                        Default
+                    </td>
+                </tr>
+                <tr class="info">
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        TB - Monthly
+                    </td>
+                    <td>
+                        01/04/2012
+                    </td>
+                    <td>
+                        Approved
+                    </td>
+                </tr>
+                <tr class="info">
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        TB - Monthly
+                    </td>
+                    <td>
+                        02/04/2012
+                    </td>
+                    <td>
+                        Declined
+                    </td>
+                </tr>
+                <tr class="info">
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        TB - Monthly
+                    </td>
+                    <td>
+                        03/04/2012
+                    </td>
+                    <td>
+                        Pending
+                    </td>
+                </tr>
+                <tr class="info">
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        TB - Monthly
+                    </td>
+                    <td>
+                        04/04/2012
+                    </td>
+                    <td>
+                        Call in to confirm
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <dl class="text-info">
+                <dt>
+                    Rolex
+                </dt>
+                <dd>
+                    劳力士创始人为汉斯.威尔斯多夫，1908年他在瑞士将劳力士注册为商标。
+                </dd>
+                <dt>
+                    Vacheron Constantin
+                </dt>
+                <dd>
+                    始创于1775年的江诗丹顿已有250年历史，
+                </dd>
+                <dd>
+                    是世界上历史最悠久、延续时间最长的名表之一。
+                </dd>
+                <dt>
+                    IWC
+                </dt>
+                <dd>
+                    创立于1868年的万国表有“机械表专家”之称。
+                </dd>
+                <dt>
+                    Cartier
+                </dt>
+                <dd>
+                    卡地亚拥有150多年历史，是法国珠宝金银首饰的制造名家。
+                </dd>
+            </dl>
+        </div>
+        <div class="span4">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#a"><span style="color: ivory;">收藏夹</span></a></li>
+                <li role="presentation"><a href="#b"><span style="color: ivory;">搜索历史</span></a></li>
+            </ul>
+
+            <div id="a" class="alert-info" contenteditable="true">
+                <button class="close" type="button" data-dismiss="alert-info">×</button>
+                <h4>在这里，你可以查看收藏夹和搜索历史！</h4>
+                <strong>警告!</strong> 请注意你的个人隐私安全.
+            </div>
+            <div id="b" class="text-error">
+                <h1>KOBE</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

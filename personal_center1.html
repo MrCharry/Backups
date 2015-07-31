@@ -1,0 +1,249 @@
+<!DOC TYPE html>
+<!-- 此页面为用户中心 -->
+<html>
+<head>
+	<?php require("/public/php/require.php") ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!-- Title here -->
+    <title>个人中心</title>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet'
+          type='text/css'>
+
+
+    <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/Public/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="/Public/css/animate.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/Public/css/style1.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--<p><?php dump( $_SESSION ['user']) ?></p>-->
+<!--Hello&nbsp;<a href="#"><?php echo $_SESSION["user"]["user_name"]?></a>-->
+
+    <ul class="nav nav-pills navbar-inverse">
+      <li role="presentation" class="active"><a href="#">个人中心</a></li>
+      <li role="presentation" class="pull-right"><a href="#">退出登录</a></li>
+      <li role="presentation" class="pull-right"><a href="#">返回主页</a></li>
+    </ul>
+<div class="outer">
+
+    <!-- Sidebar Start-->
+    <!-- Menu for tablets and mobile -->
+    <div class="navigation">
+        <a href="#">菜单</a>
+    </div>
+    <div class="sidebar">
+        <!-- Logo of company -->
+        <div class="logo">
+           <a href="#"><img src="/Public/images/photo1.png" alt="user photo"/>
+
+            <p class="text-right">更换头像</p>
+            </a>s
+        </div>
+   <!--<div class="sidebar-search">
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Text to search">
+							<span class="input-group-btn">
+								<button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
+							</span>
+                </div>
+            </form>
+        </div>-->
+        <!-- Navigation menu list -->
+   <!--    <ul class="list-unstyled list">
+            <li><a href="#home" class="anchorLink"><i class="icon-home scolor"></i>email：</a></li>
+            <li><a href="#.team" class="anchorLink"><i class="icon-user scolor"></i>注册时间：</a></li>
+            <li><a href="#.service" class="anchorLink"><i class="icon-retweet scolor"></i>用户状态：</a></li>
+            <li><a href="#.feature" class="anchorLink"><i class="icon-road scolor"></i>积分：</a></li>
+            <li><a href="#.testimonial" class="anchorLink"><i class="icon-info scolor"></i> 搜索历史</a></li>
+
+        </ul>
+   -->
+        <div class="panel panel-info">
+            <div class="panel-heading">账户名</div>
+                <div class="panel-body">
+                Panel content
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">积分</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">账户状态</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">注册时间</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div>
+
+    <!-- Sidebar End -->
+
+    <!-- Main Start -->
+
+    <div class="main">
+
+        <div id="carousel-example-generic" class="carousel slide carousel-fade">
+
+            <!-- Wrapper for slides -->
+
+            <div class="carousel-inner">
+                <!-- Carousel item start -->
+                <div class="item active">
+                    <!-- Carousel background images -->
+                    <img src="/Public/images/bg2.jpg" class="img-responsive" alt=""/>
+
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Images for carousel foreground -->
+                                <a href="#"><img src="/Public/images/s2.png" alt="" class="img-responsive"/></a>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Carousel caption -->
+                                <div class="caption-content">
+                                    <h3>我的资料</h3>
+
+                                    <p>你可以点击这里打开您的资料卡！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <!-- Carousel background images -->
+                    <img src="/Public/images/bg4.jpg" class="img-responsive" alt=""/>
+
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Images for carousel foreground -->
+                                <a href="#"><img src="/Public/images/s1.png" alt="" class="img-responsive"/></a>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Carousel caption -->
+                                <div class="caption-content">
+                                    <h3>简历状态</h3>
+
+                                    <p>点击这里可以轻松查看你的简历状态！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/Public/images/bg3.jpg" class="img-responsive" alt=""/>
+
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#"><img src="/Public/images/s3.png" alt="" class="img-responsive"/></a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="caption-content">
+                                    <h3>收藏夹</h3>
+
+                                    <p>你可以点击这里查看您收藏过的简历！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/Public/images/bg5.jpg" class="img-responsive" alt=""/>
+
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#"><img src="/Public/images/s4.png" alt="" class="img-responsive"/></a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="caption-content">
+                                    <h3>搜索历史</h3>
+
+                                    <p>你可以点击这里查看你搜索过的历史纪录！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-md-12 bg-info">
+                    <hr/>
+                    <br/>
+                    <!-- You should not remove the footer link back. -->
+                    <p class="text-center">designed &copy; by ThinkTank</p>
+                    <br/>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- This end div for main class -->
+</div>
+<div class="clearfix"></div>
+
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+
+
+<!-- Javascript files -->
+<!-- Bootstrap JS -->
+<script src="/Public/js/bootstrap.min.js"></script>
+<!-- jquery Anchor JS -->
+<script src="/Public/js/jquery.arbitrary-anchor.js"></script>
+<!-- jQuery way points -->
+<script src="/Public/js/waypoints.min.js"></script>
+<!-- Respond JS for IE8 -->
+<script src="/Public/js/respond.min.js"></script>
+<!-- HTML5 Support for IE -->
+<script src="/Public/js/html5shiv.js"></script>
+<!-- Custom JS -->
+<script src="/Public/js/custom.js"></script>
+</body>
+</html>
