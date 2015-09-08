@@ -1,0 +1,76 @@
+
+
+15:36:42
+腹部 2015/8/18 15:36:42
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script src="scripts/jquery-2.1.4.js" type="text/javascript"></script>
+<script>
+	function hideLoading() {
+		$("#loading").hide();
+	}
+	
+	
+	function load() {
+
+		$.ajax({
+			type : "get",//
+			dataType : "json",
+			url : "ListStudentAction",
+			//data : "pageIndex=" + pageIndex,
+			complete : function() {
+				hideLoading();
+			},
+			success : function(msg) {
+				if (msg.info != "success")
+					return;
+				var data = msg.stu;
+				alert(data.length);
+
+				$.each(data, function(key, value) {
+					alert(key + "," + value);
+					var row = $("#stu_Template").clone();
+					row.find("#stu_No").text(key + 1);
+					$.each(value, function(stuKey, stuValue) {
+						alert(stuKey);
+						row.find("#" + stuKey).text(stuValue);
+					});
+					row.attr("id", "stu_" + (key + 1));
+					//row.attr("onclick","alert('a')");
+					$("#datas").append(row);
+				});
+			},
+		});
+	}
+	
+	
+</script>
+</head>
+
+<body>
+
+	<div>
+		<span><button onclick="load()">Load<tton> <label
+			id="loading">Loading.....</label> </span>
+		
+		<table id="datas" border="1" cellspacing="0"
+			style="border-collapse:collapse">
+			<tr id="test">
+				<th>序号</th>
+				<th>姓名</th>
+				<th>学号</th>
+				<th>性别</th>
+			</tr>
+			<tr id="stu_Template" height="0px">
+				<td id="stu_No"></td>
+				<td id="stu_name"></td>
+				<td id="stu_number"></td>
+				<td id="stu_gender"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
